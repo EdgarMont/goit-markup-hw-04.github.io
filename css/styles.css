@@ -11,9 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
-}
+
 :root {
   --color1: #2196f3;
   --color2: #212121;
@@ -139,11 +137,30 @@ body {
   padding-top: -30px;
   padding-bottom: -30px;
 }
+/* ---  I   C   O   N  ---   I   C   O   N  ---   I   C   O   N  --- */
+.iconText1{
+  width: 22px;
+  height: 16px;
+  fill: var(--color3);
+}
+.iconArticle{
+  width: 72px;
+  height: 72px;
+}
+.iconBrand{
+  border: 1px solid #AFB1B8;
+  border-radius: 5px;
+  width: 170px;
+  height: 81px;
+  fill: #AFB1B8;
+}
 .icon{
   display: flex;
   fill: #2a2a2a;
 }
 .iconColor{
+  width: 20px;
+  height: 20px;
   fill: #AFB1B8;
 }
 .iconContainer{
@@ -246,12 +263,7 @@ body {
   justify-content: center;
 }
 .clientblock{
-  display: grid;
-  place-items: center;
-  width: 170px;
-  height: 81px;
-  border: 1px solid #afb1b8;
-  border-radius: 5px;
+  display: flex;
   margin: 15px;
 }
 .footer {
@@ -317,6 +329,7 @@ body {
   padding-right: 50px;
 }
 .menuBarText1 {
+  display: flex;
   font-size: 14px;
   font-weight: 500;
   line-height: auto;
@@ -562,7 +575,17 @@ body {
   cursor: pointer;
   box-shadow: var(--shadow);
 }
-
+.iconText1:hover{
+  transition: 0.5s;
+  cursor: pointer;
+  fill: var(--color1);
+}
+.iconBrand:hover{
+  border-color: var(--color1);
+  transition: 0.5s;
+  cursor: pointer;
+  fill: var(--color1);
+}
 .iconColor:hover,
 .iconColor:focus{
   transition: 0.5s;
