@@ -148,8 +148,6 @@ body {
   height: 72px;
 }
 .iconBrand{
-  border: 1px solid #AFB1B8;
-  border-radius: 5px;
   width: 170px;
   height: 81px;
   fill: #AFB1B8;
@@ -533,11 +531,22 @@ body {
   cursor: pointer;
 }
 .menuBarText1:hover,
-.menuBarText1:focus {
+.menuBarText1:focus{
   color: var(--color1);
   transition: 0.5s;
   cursor: pointer;
 }
+.menuBarText1:hover .iconText1{
+  fill: var(--color1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.menuBarText2:hover .iconText1{
+  fill: var(--color1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .menuBar3:hover,
 .menuBar3:focus {
   color: var(--color1);
@@ -568,6 +577,16 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
+.buttonNets:hover .iconColor{
+  transition: 0.5s;
+  cursor: pointer;
+  fill: #fff;
+}
+.buttonNets:focus .iconColor{
+  transition: 0.5s;
+  cursor: pointer;
+  fill: #fff;
+}
 .buttonPortfolio:hover {
   background-color: var(--color1);
   color: #ffffff;
@@ -575,23 +594,22 @@ body {
   cursor: pointer;
   box-shadow: var(--shadow);
 }
-.iconText1:hover{
-  transition: 0.5s;
-  cursor: pointer;
-  fill: var(--color1);
-}
-.iconBrand:hover{
-  border-color: var(--color1);
-  transition: 0.5s;
-  cursor: pointer;
-  fill: var(--color1);
-}
-.iconColor:hover,
-.iconColor:focus{
+.iconContainer:hover .iconColor{
   transition: 0.5s;
   cursor: pointer;
   fill: #fff;
 }
+.iconContainer:focus .iconColor{
+  transition: 0.5s;
+  cursor: pointer;
+  fill: #fff;
+}
+.iconBrand:hover{
+  transition: 0.5s;
+  cursor: pointer;
+  fill: var(--color1);
+}
+
 .iconContainer:hover,
 .iconContainer:focus{
   transition: 0.5s;
